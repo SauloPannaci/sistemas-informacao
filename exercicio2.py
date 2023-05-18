@@ -1,9 +1,10 @@
-# Efetuar a leitura dos valores de A e B
-a = int(input("Digite o valor de A: "))
-b = int(input("Digite o valor de B: "))
+while True:
+    nome_usuario = input("Digite o nome de usuário: ")
+    senha = input("Digite a senha: ")
 
-# calcular a diferença entre A e B
-Diferenca = a - b
+    if senha != nome_usuario:
+        break
+    else:
+        print("Erro: A senha não pode ser igual ao nome de usuário. Por favor, tente novamente.")
 
-# imprimir o resultado da diferença
-print("A diferença entre A e B é":,diferenca)
+print("Usuário e senha registrados com sucesso!")

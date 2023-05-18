@@ -1,12 +1,9 @@
-custo_fabrica = float(input("Digite o custo de fabrica do carro:"))
+# Imprimir os números de 1 a 20 um abaixo do outro
+print("Imprimir os números um abaixo do outro:")
+for num in range(1, 21):
+    print(num)
 
-# calcular a percentagem do distribuidor e dos impostos
-percentagem_distribuidor = 0.28
-percentagem_impostos = 0.45
-
-#calcular o custo ao consumidor
-custo_consumidor = custo_fabrica * (1+ percentagem_distribuidor + percentagem_impostos)
-
-# imprimir o custo ao consumidor
-print("o custo ao consumidordo carro é: R$",custo_consumidor)
-
+# Imprimir os números de 1 a 20 um ao lado do outro
+print("\nImprimir os números um ao lado do outro:")
+for num in range(1, 21):
+    print(num, end=" ")

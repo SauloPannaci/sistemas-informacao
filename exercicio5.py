@@ -1,15 +1,14 @@
-# Solicite a entrada de dois números pelo usuario
-num1 = float(input("Digite o primeiro numero:"))
-num2 = float(input("Digite o segundo numero:"))
+total_avaliacoes = int(input("Digite o total de avaliações: "))
+soma_notas = 0
 
-# Realiza as operaçoes matematicas 
-soma = num1 + num2
-subtraçao = num1 - num2
-multiplicaçao = num1 * num2
-divisao = num1 / num2
+for i in range(1, total_avaliacoes + 1):
+    nota = float(input(f"Digite a nota da avaliação {i}: "))
+    soma_notas += nota
 
-# Mostra os resultados na tela
-print("A soma dos numeros é:",soma)
-print("A subtraçao dos numeros é:",subtraçao)
-print("A multiplicaçao dos numeros é:",multiplicaçao)
-print("A dividao dos numeros é:",divisao)
+media = soma_notas / total_avaliacoes
+print("A média das notas é:", media)
+
+
+
+
+
